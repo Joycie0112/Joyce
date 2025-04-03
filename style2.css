@@ -1,0 +1,145 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url("bunny holding spoon.jpg");
+    background-color: palevioletred;
+    color: white;
+    font-size: 19px;
+}
+
+header {
+    background-color: brown; 
+    color: white; 
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem; 
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;/
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555; 
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: lightcoral; 
+    padding: 2rem;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#home {
+    text-align: center; 
+}
+
+.home-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1rem;
+}
+
+.start {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.start img {
+    max-width: 80%;
+    height: 400px;
+}
+
+.artwork img {
+    max-width: 80%;
+    height: 400px;
+    display: block;
+    margin-bottom:1rem;
+}
+
+.view-more {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: brown;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+
+
+#contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contacts li {
+    margin-bottom: 0.5rem;
+}
+
+#contacts a {
+    color: blueviolet; 
+    text-decoration: none;
+}
+
+#contacts a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav li {
+        margin: 0.5rem 0; 
+    }
+
+    .artwork-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
